@@ -196,7 +196,7 @@ The domain controller server is now successfully provisioned. Next, you'll confi
 
     After the command finishes, the VM restarts automatically.
 
-4. Connect to the domain controller server again by launching the remote desktop file. This time, sign in as **CORP\Administrator**.
+4. Connect to the domain controller server again by launching the remote desktop file. This time, sign in as **CORP\AzureAdmin**.
 5. Open a PowerShell window in administrator mode, and import the Active Directory PowerShell module by using the following command:
 
         Import-Module ActiveDirectory
