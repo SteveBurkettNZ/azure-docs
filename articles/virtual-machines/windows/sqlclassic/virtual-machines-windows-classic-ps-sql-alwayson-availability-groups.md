@@ -422,7 +422,6 @@ Next, initialize **ContosoSQL1** and **ContosoSQL2**. Follow the steps below, wh
         Import-Module -Name "sqlps" -DisableNameChecking
 8. Add **CORP\Install** as the sysadmin role for the default SQL Server instance.
 
-        net localgroup administrators "CORP\Install" /Add
         Invoke-SqlCmd -Query "EXEC sp_addsrvrolemember 'CORP\Install', 'sysadmin'" -ServerInstance "."
 9. Add **NT AUTHORITY\System** as a sign-in with the three permissions described above.
 
